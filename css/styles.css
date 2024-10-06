@@ -227,7 +227,6 @@ h2 {
     text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
-
 .recommendations {
     padding: 2rem; /* Espaciado interno */
     text-align: center; /* Centra el texto */
@@ -242,7 +241,6 @@ h2 {
     margin-bottom: 2rem; /* Espacio debajo del párrafo */
     font-size: 1.2rem; /* Tamaño del texto */
 }
-
 
 .testimonial {
     background-color: #272727; /* Color de fondo de la tarjeta */
@@ -268,7 +266,6 @@ h2 {
     font-size: 1rem; /* Tamaño del texto */
 }
 
-
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columnas como mínimo */
@@ -276,61 +273,117 @@ h2 {
     padding: 1rem; /* Espaciado interno */
 }
 
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+    }
+
+    .services .grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr; /* Una sola columna para el equipo */
+    }
+
+    .team-member {
+        height: auto; /* Permitir que la altura se ajuste */
+    }
+
+    .recommendations h2 {
+        font-size: 1.5rem; /* Reducir el tamaño del título */
+    }
+
+    .recommendations p {
+        font-size: 1rem; /* Reducir el tamaño del párrafo */
+    }
+
+    .testimonial {
+        padding: 1rem; /* Reducir el padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Ajustar el tamaño de fuente */
+    }
+
+    .team-member h3 {
+        font-size: 1rem; /* Tamaño del nombre más pequeño */
+    }
+
+    .member-info p {
+        font-size: 0.9rem; /* Tamaño de fuente para información del miembro */
+    }
+}
 
 /* Header de Preguntas Frecuentes */
 .faq-header {
-    background: url('../assets/images/faq-bg.jpg') no-repeat center center/cover; /* Cambia la imagen según tu estructura */
+    background: url('../assets/images/faq-bg.jpg') no-repeat center center/cover;
     padding: 100px 0;
     text-align: center;
     color: #ffffff;
 }
 
 .faq-header h2 {
-    font-size: 2.5rem; /* Ajusta el tamaño según tus preferencias */
-    margin-bottom: 1rem; /* Espacio inferior */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Sección de Preguntas Frecuentes */
 .faq-section {
     padding: 2rem;
     max-width: 800px; /* Limita el ancho para mejor legibilidad */
-    margin: auto; /* Centra la sección */
+    margin: auto;
 }
 
 .faq-item {
-    background-color: #1c1c1e; /* Fondo oscuro para el contenedor */
-    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #1c1c1e;
+    border-radius: 10px;
     padding: 20px;
-    margin-bottom: 1.5rem; /* Espacio inferior */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .faq-item h3 {
-    color: #a855f7; /* Color del título de la pregunta */
-    margin-bottom: 0.5rem; /* Espacio debajo del título */
+    color: #a855f7;
+    margin-bottom: 0.5rem;
 }
 
 .faq-item p {
-    color: #d1d5db; /* Texto claro para el contenido */
+    color: #d1d5db;
 }
 
 /* Footer */
 .faq-footer {
     padding: 2rem 0;
-    background-color: #121212; /* Color de fondo del footer */
-    text-align: center; /* Centra el texto */
+    background-color: #121212;
+    text-align: center;
 }
 
 /* Enlaces en el footer */
 .faq-footer a {
-    color: #a855f7; /* Color de los enlaces */
-    text-decoration: none; /* Sin subrayado */
+    color: #a855f7;
+    text-decoration: none;
 }
 
 .faq-footer a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+    text-decoration: underline;
 }
-
 
 /* Estilos para la página de Optimización de PC */
 .optimization {
@@ -340,15 +393,15 @@ h2 {
 }
 
 .card {
-    background-color: #2a2a2e; /* Fondo de la tarjeta */
-    padding: 1.5rem; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    max-width: 500px; /* Ancho máximo de la tarjeta */
-    margin: 1rem auto; /* Centrar tarjeta */
+    background-color: #2a2a2e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 1rem auto;
 }
 
-/* Estilos para la optimizacion */
+/* Estilos para la optimización */
 .optimization h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -361,7 +414,7 @@ h2 {
 
 .price {
     font-size: 1.5rem;
-    color: #a855f7; /* Color púrpura para el precio */
+    color: #a855f7;
 }
 
 .optimization h4 {
@@ -369,43 +422,41 @@ h2 {
 }
 
 .optimization ul {
-    list-style-type: none; /* Quita viñetas de la lista */
-    padding: 0; /* Sin padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .optimization li {
-    margin: 0.5rem 0; /* Espaciado entre items */
+    margin: 0.5rem 0;
     font-size: 1.1rem;
 }
 
 .optimization i {
-    color: #a855f7; /* Color púrpura para los iconos */
-    margin-right: 0.5rem; /* Espacio entre icono y texto */
+    color: #a855f7;
+    margin-right: 0.5rem;
 }
 
 .purchase-buttons {
-    margin-top: 2rem; /* Espacio superior para los botones */
-    display: flex; /* Usar Flexbox para alinear los botones en fila */
-    justify-content: center; /* Centrar los botones horizontalmente */
-    gap: 1rem; /* Espacio entre los botones */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-
 .btn {
-    display: inline-block; /* Hace que los enlaces se comporten como botones */
-    padding: 0.8rem 1.5rem; /* Espaciado interno */
-    background-color: #a855f7; /* Fondo púrpura */
-    color: #ffffff; /* Texto blanco */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave */
-    margin: 0.5rem; /* Espaciado entre botones */
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #a855f7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
 }
 
 .btn:hover {
-    background-color: #9b47d2; /* Color más oscuro al hacer hover */
+    background-color: #9b47d2;
 }
-
 
 /* Contacto */
 .contact {
@@ -417,81 +468,180 @@ h2 {
 .contact h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
-    color: #a855f7; /* Púrpura para el título */
+    color: #a855f7;
 }
 
 .contact-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; /* Espaciado entre los items de contacto */
+    gap: 2rem;
 }
 
 .contact-item {
     background-color: #2c2c2e;
     border-radius: 10px;
     padding: 1.5rem;
-    width: 250px; /* Ancho fijo para los ítems */
-    min-height: 200px; /* Altura mínima para uniformidad */
-    transition: transform 0.2s, box-shadow 0.2s; /* Transición para hover */
-    display: flex; /* Flexbox para alinear elementos */
-    flex-direction: column; /* Dirección de los elementos */
-    align-items: center; /* Centra los elementos horizontalmente */
+    width: 250px;
+    min-height: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-item:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .contact-item i {
-    color: #a855f7; /* Color púrpura para los iconos */
-    font-size: 1.5rem; /* Tamaño de los iconos */
+    color: #a855f7;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .contact-item p {
     font-size: 1.1rem;
-    margin-bottom: 1rem; /* Espacio inferior para separación */
+    margin-bottom: 1rem;
 }
 
 /* Estilos para hacer que los enlaces se vean como botones */
 .contact-item a {
-    display: flex; /* Flexbox para centrar el texto */
-    justify-content: center; /* Centra el texto horizontalmente */
-    align-items: center; /* Centra el texto verticalmente */
-    padding: 0.8rem; /* Espaciado interno uniforme */
-    width: 150px; /* Ancho fijo para uniformidad */
-    height: 50px; /* Altura fija para uniformidad */
-    background-color: #a855f7; /* Fondo púrpura */
-    color: #ffffff; /* Texto blanco */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    width: 150px;
+    height: 50px;
+    background-color: #a855f7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .contact-item a:hover {
-    background-color: #9b47d2; /* Color más oscuro al hacer hover */
+    background-color: #9b47d2;
 }
 
 /* Imagen de contacto */
 .contact-image {
-    margin-top: 2rem; /* Espacio superior para la imagen */
-    width: 100%; /* Ancho completo */
-    overflow: hidden; /* Para evitar que la imagen se desborde */
+    margin-top: 2rem;
+    width: 100%;
+    overflow: hidden;
 }
 
 .contact-image img {
-    width: 100%; /* Imagen cubre todo el ancho */
-    height: auto; /* Mantiene la relación de aspecto */
-    max-height: 200px; /* Altura máxima para que no sea demasiado alta */
-    object-fit: cover; /* Cubre el área sin deformar */
-    object-position: top; /* Muestra la parte superior de la imagen */
-    border-radius: 10px; /* Bordes redondeados */
-    display: block; /* Elimina el espacio debajo de la imagen */
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    display: block;
 }
 
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .faq-header h2 {
+        font-size: 2rem; /* Reducir tamaño de fuente */
+    }
 
+    .faq-section {
+        padding: 1rem; /* Menos padding en pantallas pequeñas */
+    }
 
+    .faq-item {
+        padding: 1rem; /* Menos padding en las preguntas */
+    }
 
+    .optimization h2,
+    .contact h2 {
+        font-size: 1.5rem; /* Tamaño más pequeño */
+    }
 
+    .optimization p,
+    .optimization li,
+    .contact-item p {
+        font-size: 1rem; /* Tamaño más pequeño */
+    }
+
+    .contact-info {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .contact-item {
+        width: 100%; /* Hacer que los ítems de contacto ocupen el ancho completo */
+        max-width: 300px; /* Ancho máximo para mejor diseño */
+    }
+
+    .purchase-buttons {
+        flex-direction: column; /* Botones en columna en pantallas pequeñas */
+        gap: 0.5rem; /* Menos espacio entre botones */
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-header h2 {
+        font-size: 1.5rem; /* Tamaño aún más pequeño */
+    }
+
+    .faq-item h3 {
+        font-size: 1.2rem; /* Reducir el tamaño del título */
+    }
+
+    .faq-item p {
+        font-size: 0.9rem; /* Tamaño más pequeño para el contenido */
+    }
+
+    .optimization h2,
+    .contact h2 {
+        font-size: 1.25rem; /* Reducir tamaño de título */
+    }
+
+    .optimization p,
+    .optimization li,
+    .contact-item p {
+        font-size: 0.9rem; /* Tamaño de texto más pequeño */
+    }
+
+    .contact-item a {
+        width: 100%; /* Hacer que los enlaces ocupen el ancho completo */
+        max-width: 150px; /* Ancho máximo */
+    }
+}
+
+.hidden {
+    display: none; /* Oculta el menú */
+}
+
+/* Estilos para el menú hamburguesa */
+.hamburger {
+    display: none; /* Oculta por defecto */
+    font-size: 2rem; /* Tamaño del icono */
+    cursor: pointer; /* Cursor de puntero */
+    color: #a855f7; /* Color del icono */
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Oculta el menú en móviles */
+        flex-direction: column; /* Cambia a columna */
+        position: absolute; /* Posición absoluta */
+        top: 100%; /* Abajo del navbar */
+        left: 0;
+        width: 100%; /* Ancho completo */
+        background-color: rgba(18, 18, 18, 0.9); /* Fondo oscuro */
+        padding: 1rem 0; /* Espaciado interno */
+    }
+
+    .navbar ul.show {
+        display: flex; /* Muestra el menú al hacer clic */
+    }
+
+    .hamburger {
+        display: block; /* Muestra el icono de hamburguesa en móviles */
+    }
+}
