@@ -10,7 +10,7 @@
 To get started, simply clone the repository:
 
 ```bash
-git clone https://github.com/sylxntcode/boostingweb-project.git
+git clone https://github.com/notstraky/boostingweb-project.git
 ```
 ## Features
 
@@ -25,4 +25,4 @@ Contributions are welcome. Feel free to submit a pull request or open an issue.
 
 ## Author
 
-[sylxnt](https://github.com/sylxntcode)
+[Straky](https://github.com/notstraky)
